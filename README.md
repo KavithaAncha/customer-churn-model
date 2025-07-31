@@ -18,3 +18,13 @@ SHAP report and feature importance graphs can be found under `reports/`.
 1. Upload data to your S3 bucket: `s3://your-bucket/data/...`
 2. Run `SageMaker_Pipelines_Project.ipynb` or trigger from Studio UI
 
+## Notes on Pipeline Execution
+
+While the full SageMaker pipeline was implemented successfully, the final `TransformStep` failed to execute due to an AWS service quota limit on the selected instance type. A service quota increase request has been submitted (screenshot attached). 
+
+To avoid further delay, the project is being submitted with:
+- Screenshots of the pipeline structure and steps
+- A previously successful Clarify explainability run
+- Confirmation that all other pipeline steps (preprocessing, training, evaluation, registration) executed successfully
+
+This approach ensures transparency while allowing progress to continue on remaining assignments.
